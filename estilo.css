@@ -1,0 +1,55 @@
+#opcao-jantar:checked ~ #menu-lanche,
+#opcao-lanche:checked ~ #menu-jantar{
+	display: none;
+}
+
+.menu{
+	
+	width:100%;
+	
+}
+body {
+	background: #CDAA7D;
+	margin: 50;
+	font-family: comic;
+	text-align: center;
+	font-size: 250%;
+
+}
+
+input[type=radio]{
+	display:none;
+	
+}
+
+label{
+	background-color: #FF7F50;
+	background-repeat: no-repeat;
+	background-size: 10em;
+	background-position: center;
+	color: black;
+	display: block;
+	font-size: 90%;
+	padding: 1.5em 0 1em;
+	text-transform: uppercase;
+}
+
+	input[type=radio]:checked + label{
+		background-color: #FFA500;
+	} 
+
+label{
+	width: 50%;
+
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
+}
+
+label[for=opcao-jantar]{
+	left: 0;
+}
+
+label[for=opcao-lanche]{
+	right: 0;
+}
